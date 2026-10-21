@@ -51,7 +51,7 @@ def build_prompt_chain(config: LLMConfig):
             "Sos un asistente técnico especializado en análisis de software. "
             "Extraé las entidades técnicas requeridas respetando estrictamente el schema. "
             "Respondé únicamente con un JSON válido con las claves tecnologias, "
-            "nivel_criticidad y resumen_tecnico."
+            "nivel_de_criticidad y resumen_tecnico."
         ),
         ("human", "Analizá el siguiente texto técnico:\n\n{texto}")
     ])
