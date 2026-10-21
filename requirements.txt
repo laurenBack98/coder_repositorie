@@ -1,0 +1,14 @@
+openai
+anthropic
+google-genai
+groq
+pydantic
+python-dotenv
+huggingface_hub
+langchain
+langchain-core
+langchain-openai
+langchain-groq
+langchain-google-genai
+langchain-huggingface
+langchain-anthropic
