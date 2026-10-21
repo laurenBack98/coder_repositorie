@@ -42,13 +42,13 @@ async def probar_cadena_por_proveedor(provider: Provider, model: str, env_var: s
     print("-> Ejecucion individual (process_text / ainvoke):")
     resultado = await process_text(chain, textos[0])
     print(f" Tecnologias : {resultado.tecnologias}")
-    print(f" Criticidad  : {resultado.nivel_criticidad}")
+    print(f" Criticidad  : {resultado.nivel_de_criticidad}")
     print(f" Resumen     : {resultado.resumen_tecnico}")
     # 2. Prueba en lote con abatch
     print("\n-> Ejecucion en lote (abatch):")
     resultados_batch = await chain.abatch([{"texto": t} for t in textos[1:]])
     for idx, r in enumerate(resultados_batch, 1):
-        print(f" [{idx}] Techs: {r.tecnologias} | Criticidad: {r.nivel_criticidad}")
+        print(f" [{idx}] Techs: {r.tecnologias} | Criticidad: {r.nivel_de_criticidad}")
 async def main():
     load_api_keys()
     textos_prueba = [
