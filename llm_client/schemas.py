@@ -25,7 +25,7 @@ class EntidadesTecnicas(BaseModel):
     tecnologias: list[str] = Field(
         description="Lista de tecnologías, frameworks o lenguajes mencionados"
     )
-    nivel_criticidad: Literal["baja", "media", "alta"] = Field(
+    nivel_de_criticidad: Literal["baja", "media", "alta"] = Field(
         description="Nivel de criticidad estimado del problema técnico descrito"
     )
     resumen_tecnico: str = Field(
